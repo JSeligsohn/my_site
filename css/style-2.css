@@ -1,0 +1,551 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+
+ html {
+  background: #404040;
+ }
+
+body{
+  box-sizing: border-box;
+  /*background: rgba(255, 235, 0, 0.68);*/
+  /*background: rgba(255, 243, 97, 1);*/
+  background: -webkit-linear-gradient(-65deg, #fff58c 1%,#fff58c 39%,#fff58c 39%,#f7da00 100%);
+  font-family:'Source Sans Pro', sans-serif;
+  border-top: 5px solid black;
+  color: #404040;
+;
+}
+
+/*************
+General Styles
+*************/
+.height-fix {
+  min-height: 1000px;
+}
+
+::selection {
+  background: #2E2E2E;
+  color: steelblue;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.container {
+  padding: 3%;
+}
+
+/**********
+NAVIGATION
+**********/
+
+.top-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: steelblue;
+  transition: all .3s ease;
+}
+
+.top-nav ul {
+  margin: 10px 10px;
+}
+
+.top-nav li {
+  float: left;
+  margin-right: 30px;
+}
+
+.top-nav a {
+  color: white;
+}
+
+.top-nav li:hover{
+  border-top: 3px solid black !important;
+  border-right: none !important;
+}
+
+nav {
+  position: relative;
+  z-index: 10;
+}
+
+.nav-pills li{
+  text-align: right;
+  /*font-size: 1.4em;*/
+  font-size: 1em;
+  border:6px solid inherit;
+  transition: all .3s ease;
+  background:  none;
+}
+
+nav a {
+  color: black;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.nav-pills li:hover {
+  background: rgba(255,255,255, 0.5);
+  border-right: 5px solid black;
+}
+
+li.active-link{
+  border-right: 5px solid black;
+}
+
+.affix {
+  top: 20px;
+  right: 60px;
+}
+
+.affix-top {
+  position: fixed;
+  right: 60px;
+}
+
+.affix-bottom {
+  right: 60px;
+}
+
+/*ul {
+  list-style: none;
+  text-align: right;
+}*/
+
+/*li {
+  display: block;
+  padding: 10% 15%;
+  margin: 4% 0;
+  text-align: right;
+  background: rgba(255,255,255,0.5);
+  border-radius: 4px;
+  transition: all .3s ease;
+}*/
+
+/*li a {
+   text-decoration: none;
+   color: black;
+   font-size: 1.5em;
+   text-align: right;
+/*   padding: 10px 15px;
+*/   
+
+
+/*li:hover` {
+/*  border-right: 6px solid black;
+*/  /*background: black;
+    background: rgba(0,0,0,0.5);*/
+
+
+/*li:hover a{
+  text-decoration: none;
+  color: white;
+}*/
+
+#menu-toggle {
+  position: relative;
+  z-index: 99;
+}
+
+.top-drop {
+  margin-top: 3%;
+}
+
+.name {
+  margin-bottom: 5px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+h1 span {
+  font-size: .7em;
+}
+.title {
+  margin: 10px 0 20px 0;
+  font-size: 1.4em;
+  font-style: italic;
+}
+
+.name_title {
+  display: inline-block;
+}
+
+.j, .s {
+  -webkit-transition: all .5s ease;
+  }
+
+.j:hover:after, .s:hover:after {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all .8s easeOut;
+  left: -30px;
+  content: "onathan";
+  font-size: .1em;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.name_title:hover .j:after, .name_title:hover .s:after {
+    transform: rotateZ(40deg);
+    top: 25px;
+    left: -5px;
+    transition: transform .5s ease;
+}
+
+.name_title:hover .s:after {
+  top: 22px;
+  left: -3px;
+}
+
+.name_title:hover .s{
+  transform: translateX(-40px);
+}
+
+.s {
+  position: relative;
+  left: ;
+}
+
+.s:hover:after {
+  content: 'eligsohn';
+  
+}
+
+.first_name {
+  position: relative;
+  top: 130px;
+  left: -30px;
+  transform: rotateZ(30deg);
+}
+
+.last_name {
+  position: relative;
+  top: 130px;
+  left: -20px;
+  transform: rotateZ(30deg);
+}
+
+.selfie {
+  width: 85%;
+}
+
+.selfie img {
+  border: 1px solid white;
+  width: 70%;
+  transition: all 1.5s ease;
+}
+
+.selfie:hover img{
+  -webkit-transform: rotateY(180deg);
+}
+
+.content {
+  font-size: 1.3em;
+}
+
+.content-link {
+  color: black;
+}
+
+.content-link:hover {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.synopsis {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black
+}
+
+.content .subpage {
+  border-radius: 5px;
+  background: cornsilk;
+}
+
+/**********
+PORTFOLIO
+**********/
+
+.portfolio_heading {
+  text-align: center;
+}
+
+.my_work {
+  margin: 0 auto;
+}
+
+.my_work ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.work_item {
+  position: relative;
+  height: 200px;
+  background: #404040;
+  padding: 5%;
+  margin: 3%;
+  transition: all .3s ease;
+  z-index: 99;
+}
+
+.work_desc {
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: tomato;
+  padding: 2%;
+  z-index: 5;
+  -webkit-transform: rotateZ(30deg);
+  display: none;
+}
+
+.work_item:hover {
+  background: #505050;
+  -webkit-transform: rotateZ(-30deg);
+}
+
+.work_item:hover > .work_desc {
+  display: inline-block;
+}
+
+/********
+FOOTER
+********/
+
+.footer {
+  position: relative;
+  /*background-color: rgba(255,255,255, 0.7);*/
+  /*background: rgba(255, 243, 97, 1);*/
+  width: 100%;
+  margin-top: auto;
+}
+
+#bottom-scroll {
+  color: #404040;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  right: 50%;
+}
+
+.footer-initials {
+  position: relative;
+  bottom: -80px;
+  right: 15px;
+  font-size: 25em;
+  font-weight: 900;
+  padding: 0;
+  z-index: 1;
+  cursor: default;
+  transition: all .3s ease;
+}
+
+.footer-initials:hover .j:after, .footer-initials:hover .s:after, .initials-hover .j:after, .initials-hover .s:after {
+  display: inline-block;
+  position: relative;
+/*  -webkit-transition: all .7s ease;
+*/  left: -30px;
+  content: "onathan";
+  font-size: .1em;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.footer-initials .j:after, .footer-initials .s:after {
+  -webkit-transition: opacity .5s ease .2s;
+  position: relative;
+  content: "onathan";
+  left: -30px;
+  font-size: .1em;
+  opacity: 0;
+}
+
+.initials-hover .j:after, .initials-hover .s:after {
+  opacity: 1;
+}
+
+.footer-initials .s:after, .footer-initials:hover .s:after {
+  content: "eligsohn";
+  left: -10px;
+}
+
+.footer-initials .j {
+  position: relative;
+  right: -240px;
+}
+
+.footer-initials .s {
+  position: relative;
+  right: -100px;
+}
+
+.footer-initials:hover .j, .footer-initials:hover .s, .initials-hover .j, .initials-hover .s {
+  right: 0;
+}
+
+i {
+  font-style: normal;
+  font-family: 'FontAwesome';
+  transition: all .2s ease;
+}
+
+i:hover {
+  color: steelblue;
+}
+
+.social-link {
+  color: black;
+  margin-left: 20px;
+}
+
+.social-link:first-child {
+  margin-left: 0;
+}
+
+.social-link:hover {
+  text-decoration: none;
+}
+
+.copyright p{
+  margin-bottom: 0;
+}
+
+/***********
+ABOUT PAGE
+***********/
+
+#chillin-me {
+  width: 100%;
+}
+
+/***********
+Media Queries
+************/
+
+@media screen and (min-width: 500px) {
+  .nav-pills li {
+    font-size: 1.4em;
+  }
+
+  .nav-pills a:hover {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+  h1 {
+    font-size: 4em;
+  }
+
+  .content .subpage {
+    width: 80%;
+  }
+
+  .portfolio_heading {
+    text-align: left;
+  }
+
+  .work_item {
+    float: left;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .header {
+    margin-bottom: 30px;
+  }
+  .selfie img {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 990px) {
+  .footer {
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  .footer-relative {
+    position: relative;
+  }
+
+  .footer-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  li.active-link {
+    border-right: none;
+  }
+
+  .nav-pills {
+    background: rgba(0,0,50,0.3);
+     border-radius: 3px 0 0 3px;
+  }
+
+  #sidebar {
+    display: none;
+    transition: all .3s ease;
+
+  }
+
+  #sidebar a {
+    color: #2E2E2E;
+  }
+
+  #sidebar ul {
+    position: absolute;
+    top: 45px;
+    right: -105px;
+  }
+
+  #sidebar.swipe ul{
+    -webkit-transform: translateX(-105px);
+  }
+
+  .swipe {
+    transition: all .3s ease;
+  }
+
+  .nav-pills li:hover {
+    border-right: none;
+  }
+  .nav-pills li:hover a{
+    background: inherit;
+    border-radius: 0;
+  }
+
+  .affix-top, .affix {
+    right: 0;
+  }
+}
