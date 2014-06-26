@@ -4,9 +4,10 @@
   box-sizing: border-box;
  }
 
- html {
+html {
   background: #404040;
- }
+  height: 100%;
+}
 
 body{
   box-sizing: border-box;
@@ -16,7 +17,7 @@ body{
   font-family:'Source Sans Pro', sans-serif;
   border-top: 5px solid black;
   color: #404040;
-;
+  min-height: 100%;
 }
 
 /*************
@@ -533,7 +534,7 @@ ABOUT PAGE
   color: cornsilk;
 }
 
-.about-header, .blog-header {
+.about-header, .blog-header, .contact-header {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -748,8 +749,10 @@ Media Queries
   }
 
   .nav-pills {
-    background: rgba(0,0,50,0.3);
-     border-radius: 3px 0 0 3px;
+    background: rgba(64, 64, 64, 0.94);
+    border-radius: 3px 0 0 3px;
+    border: 3px solid #404040;
+    border-right: none;
   }
 
   #sidebar {
@@ -760,7 +763,12 @@ Media Queries
   }
 
   #sidebar a {
-    color: #2E2E2E;
+    color: cornsilk;
+  }
+
+  #sidebar li:hover a {
+    background: cornsilk;
+    color: #404040;
   }
 
   #sidebar ul {
