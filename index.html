@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jonathan Seligsohn - Front-end Developer</title>
 
-    <head profile="http://www.w3.org/2005/10/profile">
 	<link rel="icon" type="image/png" href="img/favicon-64px.png">
-
 
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style-2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,10 +43,22 @@
 					  	<div class="row">
 					  		<div class="col-sm-4">
 							    <div class='selfie center-block'>
-							    	<img class="img-responsive img-circle" src='img/img_1346.jpg' alt="personal_pic">
+							    	<div class="flip-container">
+							    		<div class="flipper">
+							    			<div class='front'>
+							    				<img class="img-responsive img-circle" src='img/img_1346.jpg' alt="personal_pic">
+							    			</div>
+							    			<div class='back'>
+							    				<p>You've found the back of the my head.</p>
+							    				<p><a class='hire' href='mailto:jbseligsohn@gmail.com'>Hire me</a>, please!</p>
+							    			</div>
+							    		</div>
+
+							    	</div>
+							    	
 						    	</div>		    
 					    	</div>
-						    <div class="col-sm-7 synopsis">
+						    <div class="col-md-7 col-sm-8 col-md-offset-1 synopsis">
 						    	<p class=''>Learning code one day at a time, I seek to improve my web development and design skills. Through online tutorials, <a class="content-link" href="http://www.coursera.org">MOOCs</a>, <a class="content-link" href="http://www.teamtreehouse.com">Treehouse</a>, <a class="content-link" href="http://www.codeschool.com">CodeSchool</a>, <a class="content-link" href="http://www.codeacademy.com">Codeacademy</a> and more, I enjoy every moment of it.</p>
 						    	<p>A front-end developer today, a full-stack developer tomorrow.</p>
 						    </div>
@@ -63,21 +73,21 @@
 			      <li><a href="portfolio.html">Portfolio</a></li>
 			      <li><a href="about.html">About</a></li>
 			      <li><a href="blog.html">Blog</a></li>
-			      <li><a href="#">Contact</a></li>
+			      <li><a href="contact.html">Contact</a></li>
 			    </ul>
 			  </nav>
 			 </div>
 		</div>
 
 	</div> <!-- End of Container -->
-					<div id="bottom-scroll"><i class="fa-3x fa-chevron-down"></i></i></div>
+					<div id="bottom-scroll" class='hidden-sm hidden-xs'><i class="fa-3x fa-chevron-down"></i></i></div>
 
 	<div class="footer">
 		<div class="container-fluid footer-relative">
 			<div class="footer-bottom">
 				<div class="row">
 					<div class='col-md-3 text-center social'>
-						<p>Connect with me :)</p>
+						<p>Connect with me <i class="fa fa-smile-o"></i></p>
 						<div class="social-links">
 							<a class="social-link" href="mailto:jbseligsohn@gmail.com"><i class="fa-3x fa-envelope-square"></i></a>
 							<a class="social-link" href="http://www.linkedin.com/in/jbs21/"><i class='fa-3x fa-linkedin-square'></i></a>
