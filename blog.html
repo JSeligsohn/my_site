@@ -44,10 +44,33 @@
   						<div class='row'>
   							<div class="col-md-10 col-md-offset-1">
   								<p>If I actually had a blog, would you even read it?</p>
-							    <button type="button" class='btn btn-success btn-yes'><span class='glyphicon glyphicon-ok'></span>Yes</button>
-							    <button type="button" class='btn btn-danger btn-no'><span class='glyphicon glyphicon-remove'></span>No</button>		
+							    <button type="button" class='btn btn-success btn-yes' data-toggle="modal" data-target=".yes-blog"><span class='glyphicon glyphicon-ok'></span>Yes</button>
+							    <button type="button" class='btn btn-danger btn-no' data-toggle="modal" data-target=".no-blog"><span class='glyphicon glyphicon-remove'></span>No</button>		
   							</div>
-  						</div>			  	
+  						</div>
+
+						<div class="modal fade yes-blog" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-sm">
+						    <div class="modal-content">
+					  			<p>Glad to hear that. Stay tuned!</p>
+					  			<img class='img-responsive' src="http://cdn.mdjunction.com/components/com_joomlaboard/uploaded/images/yippee_02-d1c43d168588f25dbc87b0926f8d2c26.jpg">
+					  			<p class='caption'><caption>MDJunction.com</caption></p>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="modal fade no-blog" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-sm">
+						    <div class="modal-content">
+					  			<p>Well good, because I'm not making one.</p>
+					  			<img class="img-responsive" src="http://lovelyhealthylife.files.wordpress.com/2012/08/child-with-tongue-out.jpeg?w=700">
+					  			<p class='caption'><caption>Lovelyhealthylife.com</caption></p>
+						    </div>
+						  </div>
+						</div>
+
+
+
 			 		</div>
   				</div>
 			</div>  		

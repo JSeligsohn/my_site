@@ -26,7 +26,7 @@ General Styles
   min-height: 1000px;
 }
 
-::selection {
+:selection {
   background: #2E2E2E;
   color: steelblue;
 }
@@ -352,6 +352,14 @@ Flipping Image
 PORTFOLIO
 **********/
 
+.serious p {
+  padding: 5%;
+}
+
+#serious-modal {
+  cursor: pointer;
+}
+
 .portfolio_heading {
   text-align: center;
 }
@@ -539,10 +547,11 @@ ABOUT PAGE
 }
 
 
-.skills ul { 
+.skill-list { 
   text-align: left;
   list-style: none;
   margin-bottom: 10%;
+  padding-left: 10px;
 }
 
 .skill-icon-lg {
@@ -637,6 +646,16 @@ Keyframes
 
 }
 
+.modal-content {
+  padding: 5%;
+}
+
+.caption {
+  font-size: .7em;
+  margin-top: 5px;
+  font-style: italic;
+}
+
 /***********
   Contact
 ***********/
@@ -682,6 +701,10 @@ Media Queries
 
   .work_item:nth-child(n+1) {
     margin-left: 0;
+  }
+
+  .skill-list {
+    padding-left: 40px;
   }
 }
 
