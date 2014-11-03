@@ -33,8 +33,11 @@ $('#bottom-scroll').click(function() {
   $(this).fadeOut();
 })
 
-var $front_height = $('.front').css('height');
-$('.back').css('height', $front_height);
+//Make sure back-side of flipped picture is same height as picture.
+$(document).ready(function() {
+  var $front_height = $('.front').css('height');
+  $('.back').css('height', $front_height);
+});
 
 $('.skill-icon-code').hover(function() {
   $(this).toggleClass('stretching');
