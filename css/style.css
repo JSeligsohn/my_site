@@ -48,6 +48,11 @@ General Styles
     padding: 5%;
 }
 
+.row.header {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /**********
 NAVIGATION
 **********/
