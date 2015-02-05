@@ -41,16 +41,11 @@ General Styles
 }
 
 .container {
-  padding: 3%;
+  padding-top: 3%;
 }
 
 .content .subpage {
     padding: 5%;
-}
-
-.row.header {
-  margin-right: 0;
-  margin-left: 0;
 }
 
 /**********
