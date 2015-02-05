@@ -373,6 +373,12 @@ PORTFOLIO
   display: none;
 }
 
+.work_item:hover {
+  background: #707070;
+  box-shadow: 0px 4px 8px grey;
+}
+
+/*
 .work_item:nth-child(odd):hover {
   -webkit-transform: rotateZ(30deg);
 }
@@ -381,10 +387,12 @@ PORTFOLIO
   -webkit-transform: rotateZ(-30deg);
 }
 
+
 .work_item:hover {
   background: #707070;
   -webkit-transform: rotateZ(-30deg);
 }
+*/
 
 .work_item:hover > .work_desc {
   display: inline-block;
