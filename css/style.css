@@ -337,6 +337,20 @@ PORTFOLIO
   cursor: pointer;
 }
 
+.modal-work {
+  background: #404040;
+}
+
+.modal-work-desc {
+  color: #FDF071;
+}
+
+.visit-site button {
+  margin-top: 10px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
 .portfolio_heading {
   text-align: center;
 }
@@ -362,15 +376,13 @@ PORTFOLIO
 
 .work_desc {
   color: white;
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   right: 0;
   background: tomato;
   padding: 2%;
-  -webkit-transform: rotateZ(30deg);
   z-index: 5;
-  display: none;
 }
 
 .work_item:hover {
@@ -392,11 +404,12 @@ PORTFOLIO
   background: #707070;
   -webkit-transform: rotateZ(-30deg);
 }
-*/
+
 
 .work_item:hover > .work_desc {
   display: inline-block;
 }
+*/
 
 /********
 FOOTER
@@ -697,10 +710,13 @@ Media Queries
     width: 100%;
     height: auto;
   }
+  .modal-dialog {
+    width: 770px;
+  }
 
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
   .footer {
     overflow: hidden;
     padding-bottom: 0;
@@ -719,6 +735,10 @@ Media Queries
   .work_item {
     width: 30%;
     margin: 1.25% 1.66% 1.25% 1.66%;
+  }
+
+  .modal-work-desc h2 {
+    margin-top: 0;
   }
 
 }
